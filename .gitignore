@@ -23,8 +23,8 @@
 hs_err_pid*
 
 # Personal files created non-versioned
-*/target/
 *.classpath
 *.project
 *.settings/
 *.DS_Store
+/target/
