@@ -17,5 +17,7 @@ public class PrimeiraClasseSelenium {
         driver.findElement(By.xpath("//*[@id='basicBootstrapForm']/div[4]/div/input")).sendKeys("(11) 98765-4321");
         
         driver.findElement(By.xpath("//*[@id='basicBootstrapForm']//label[2]/input")).click();
+        
+        driver.findElement(By.id("checkbox2")).click();
     }
 }
