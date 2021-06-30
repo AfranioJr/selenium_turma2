@@ -4,6 +4,7 @@
 	<groupId>selenium_turma2</groupId>
 	<artifactId>selenium_turma2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<name>selenium_turma2</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
