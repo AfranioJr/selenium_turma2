@@ -28,7 +28,10 @@ public class PrimeiraClasseSelenium {
     @Test
     public void exercicio02Selenium(){
         driver.findElement(By.xpath("//*[@value='Male']")).click();
-        driver.findElement(By.id("checkbox2")).click();
+    }
+    @Test
+    public void exercicio03Selenium(){
+        driver.findElement(By.xpath("//input[@id='checkbox2']")).click();
         
         driver.findElement(By.id("msdd")).click();
         WebElement div = driver.findElement(By.id("msdd"));
