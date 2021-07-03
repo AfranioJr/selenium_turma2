@@ -12,6 +12,11 @@ import org.openqa.selenium.support.ui.Select;
 public class PrimeiraClasseSelenium {
     static ChromeDriver driver = new ChromeDriver();
 
+    private void fechaLi(){
+        driver.findElement(By.xpath("//label[contains(text(),'Languages')]")).click(); //Recolhe para expandir a caixa de seleção
+        System.out.println("Fechou a <li>");
+    }
+
     @BeforeClass
     public static void beforeClass(){
         driver.get("http://demo.automationtesting.in/Register.html");
@@ -42,6 +47,7 @@ public class PrimeiraClasseSelenium {
         List<WebElement> List = ul.findElements(By.tagName("li"));
         List.get(28).click();
         List.get(7).click();
+        fechaLi();
         
     }
     /* Mais duas formas de selecionar um lista Ordenada <li>*/
