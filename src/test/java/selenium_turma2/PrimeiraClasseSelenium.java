@@ -28,7 +28,7 @@ public class PrimeiraClasseSelenium {
         driver.findElement(By.xpath("//*[@ng-model='LastName']")).sendKeys("Junior");
         driver.findElement(By.xpath("//*[@ng-model='Adress']")).sendKeys("Rua Dona Brigida, 597");
         driver.findElement(By.xpath("//*[@ng-model='EmailAdress']")).sendKeys("emaildetestes@teste.com");
-        driver.findElement(By.xpath("//*[@ng-model='Phone']")).sendKeys("1198765-4321");
+        driver.findElement(By.xpath("//*[@ng-model='Phone']")).sendKeys("1234567890");
     }
     @Test
     public void exercicio02Selenium(){
@@ -36,7 +36,6 @@ public class PrimeiraClasseSelenium {
     }
     @Test
     public void exercicio03Selenium(){
-        driver.findElement(By.xpath("//input[@id='checkbox2']")).click();
         driver.findElement(By.xpath("//input[@id='checkbox2']")).click();
     }
     @Test
@@ -69,8 +68,9 @@ public class PrimeiraClasseSelenium {
 		
 	}
     */
-    /*
     
+    @Test
+    public void exercicio04_FinalSelenium(){
         Select optionSkills = new Select(driver.findElement(By.id("Skills")));
         optionSkills.selectByVisibleText("Android");
 
@@ -95,6 +95,6 @@ public class PrimeiraClasseSelenium {
         driver.findElement(By.id("firstpassword")).sendKeys("Ps6%4#2!");
         driver.findElement(By.id("secondpassword")).sendKeys("Ps6%4#2!");
 
-        //driver.findElement(By.id("Button1")).click();
-    }*/
+        driver.findElement(By.id("submitbtn")).click();
+    }
 }
