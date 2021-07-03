@@ -1,26 +1,33 @@
 package selenium_turma2;
 
 import java.util.List;
-import org.junit.jupiter.api.Test;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class PrimeiraClasseSelenium {
-    @Test
-    public void testelogin(){
-        ChromeDriver driver = new ChromeDriver();
+    static ChromeDriver driver = new ChromeDriver();
+
+    @BeforeClass
+    public static void beforeClass(){
         driver.get("http://demo.automationtesting.in/Register.html");
+    }
+
+    @Test
+    public void exercicio01Selenium(){
         driver.findElement(By.xpath("//*[@ng-model='FirstName']")).sendKeys("Afrânio");
         driver.findElement(By.xpath("//*[@ng-model='LastName']")).sendKeys("Junior");
-        
         driver.findElement(By.xpath("//*[@ng-model='Adress']")).sendKeys("Rua Dona Brigida, 597");
         driver.findElement(By.xpath("//*[@ng-model='EmailAdress']")).sendKeys("emaildetestes@teste.com");
         driver.findElement(By.xpath("//*[@ng-model='Phone']")).sendKeys("1198765-4321");
-        
-        driver.findElement(By.xpath("//*[@id='basicBootstrapForm']//label[2]/input")).click();
-        
+    }
+    @Test
+    public void exercicio02Selenium(){
+        driver.findElement(By.xpath("//*[@value='Male']")).click();
         driver.findElement(By.id("checkbox2")).click();
         
         driver.findElement(By.id("msdd")).click();
