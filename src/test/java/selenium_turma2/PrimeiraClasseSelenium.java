@@ -12,12 +12,12 @@ public class PrimeiraClasseSelenium {
     public void testelogin(){
         ChromeDriver driver = new ChromeDriver();
         driver.get("http://demo.automationtesting.in/Register.html");
-        driver.findElement(By.xpath("//*[@id='basicBootstrapForm']/div[1]/div[1]/input")).sendKeys("Afrânio");
-        driver.findElement(By.xpath("//*[@id='basicBootstrapForm']/div[1]/div[2]/input")).sendKeys("Junior");
+        driver.findElement(By.xpath("//*[@ng-model='FirstName']")).sendKeys("Afrânio");
+        driver.findElement(By.xpath("//*[@ng-model='LastName']")).sendKeys("Junior");
         
-        driver.findElement(By.xpath("//*[@id='basicBootstrapForm']/div[2]/div/textarea")).sendKeys("Rua Dona Brigida, 597");
-        driver.findElement(By.xpath("//*[@id='eid']/input")).sendKeys("emaildetestes@teste.com");
-        driver.findElement(By.xpath("//*[@id='basicBootstrapForm']/div[4]/div/input")).sendKeys("(11) 98765-4321");
+        driver.findElement(By.xpath("//*[@ng-model='Adress']")).sendKeys("Rua Dona Brigida, 597");
+        driver.findElement(By.xpath("//*[@ng-model='EmailAdress']")).sendKeys("emaildetestes@teste.com");
+        driver.findElement(By.xpath("//*[@ng-model='Phone']")).sendKeys("1198765-4321");
         
         driver.findElement(By.xpath("//*[@id='basicBootstrapForm']//label[2]/input")).click();
         
